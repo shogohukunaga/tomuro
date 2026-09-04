@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>株式会社戸室組｜栃木県佐野市の総合建設業</title>
+<meta name="description" content="株式会社戸室組は栃木県佐野市の総合建設業です。治山・林道工事・道路工事・河川・砂防工事を手がけています。">
+<link rel="canonical" href="https://shogohukunaga.github.io/tomuro/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="株式会社戸室組｜栃木県佐野市の総合建設業">
+<meta property="og:description" content="栃木県佐野市の総合建設業。治山・林道工事・道路工事・河川・砂防工事。">
+<meta property="og:image" content="https://shogohukunaga.github.io/tomuro/image/work-civil.jpg">
+<meta property="og:url" content="https://shogohukunaga.github.io/tomuro/">
+<meta property="og:site_name" content="株式会社戸室組">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=" js";</script>
+<style>
+/* =========================================================
+   株式会社戸室組 — design-spec.md 準拠
+   モノクローム × エディトリアル × 幾何モチーフの反復
+   ========================================================= */
+:root{
+  --ink:#111111;
+  --sub:#6b6b6b;
+  --line:#dcdcdc;
+  --band:#f1f1f1;
+  --band-2:#fafafa;
+  --accent:#14603a;
+  --maxw:1200px;
+  --pad:150px;
+  /* 形状語彙 */
+  --btn-hex:polygon(12px 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,12px 100%,0 50%);
+  --chamfer:polygon(44px 0,100% 0,100% calc(100% - 44px),calc(100% - 44px) 100%,0 100%,0 44px);
+  --chamfer-alt:polygon(0 0,calc(100% - 44px) 0,100% 44px,100% 100%,44px 100%,0 calc(100% - 44px));
+  --diamond:polygon(50% 0,100% 50%,50% 100%,0 50%);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:#fff;color:var(--ink);overflow-x:hidden;
+  font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic Medium","Yu Gothic",system-ui,sans-serif;
+  font-size:16px;line-height:1.9;letter-spacing:.04em;font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4,p,dl,dd,figure{margin:0;}
+ul,ol{margin:0;padding:0;list-style:none;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.line{display:inline-block;}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* --- 英字 --- */
+.en{font-family:"Work Sans","Helvetica Neue",Arial,sans-serif;}
+/* --- 縦組みローマ字 --- */
+.vtxt{
+  writing-mode:vertical-rl;font-family:"Work Sans",Arial,sans-serif;
+  font-size:11px;letter-spacing:.2em;color:var(--sub);line-height:1;white-space:nowrap;
+}
+/* --- 方眼＋45°ラティス --- */
+.grid-bg{
+  background-image:
+    linear-gradient(rgba(17,17,17,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(17,17,17,.055) 1px,transparent 1px),
+    repeating-linear-gradient(45deg,rgba(17,17,17,.035) 0 1px,transparent 1px 56px),
+    repeating-linear-gradient(-45deg,rgba(17,17,17,.035) 0 1px,transparent 1px 56px);
+  background-size:40px 40px,40px 40px,auto,auto;
+}
+/* --- 小菱形 --- */
+.dia{display:inline-block;width:7px;height:7px;background:var(--ink);clip-path:var(--diamond);
+  vertical-align:middle;flex:0 0 auto;}
+.dia--accent{background:var(--accent);}
+
+/* --- ボタン --- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--ink);color:#fff;padding:18px 40px;font-size:14px;font-weight:500;
+  letter-spacing:.1em;clip-path:var(--btn-hex);transition:background .25s ease;border:0;cursor:pointer;
+  font-family:inherit;
+}
+.btn:hover{background:#333;}
+.btn--ghost{background:#fff;color:var(--ink);border:1px solid var(--ink);clip-path:none;padding:17px 28px;}
+.btn--ghost:hover{background:var(--band);}
+/* READ MORE 型 */
+.more{display:inline-flex;align-items:center;gap:14px;font-family:"Work Sans",Arial,sans-serif;
+  font-size:13px;letter-spacing:.14em;}
+.more i{width:22px;height:22px;background:var(--ink);clip-path:var(--diamond);position:relative;flex:0 0 auto;}
+.more i::after{content:"";position:absolute;left:8px;top:8px;width:5px;height:5px;
+  border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg);}
+
+/* --- テキストリンク --- */
+.tlink{position:relative;text-decoration:underline;text-underline-offset:6px;
+  text-decoration-thickness:1px;text-decoration-color:var(--line);transition:text-decoration-color .3s;}
+.tlink:hover{text-decoration-color:var(--accent);}
+
+/* =========================================================
+   Header
+   ========================================================= */
+header.site{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line);}
+header.site .wrap{display:flex;align-items:center;gap:28px;height:84px;max-width:1560px;}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand__mark{display:flex;gap:3px;align-items:center;}
+.brand__mark span{width:13px;height:13px;background:var(--ink);clip-path:var(--diamond);display:block;}
+.brand__mark span:last-child{background:#fff;border:1px solid var(--ink);}
+.brand__name{font-size:17px;font-weight:500;letter-spacing:.08em;line-height:1.25;white-space:nowrap;}
+.brand__name small{display:block;font-family:"Work Sans",Arial,sans-serif;font-weight:400;
+  font-size:9px;letter-spacing:.22em;color:var(--sub);}
+.hmeta{font-size:11px;line-height:1.7;color:var(--sub);letter-spacing:.02em;white-space:nowrap;
+  min-width:0;flex:0 1 auto;overflow:hidden;text-overflow:ellipsis;}
+.main a{white-space:nowrap;}
+.hmeta b{color:var(--ink);font-weight:500;font-family:"Work Sans",Arial,sans-serif;letter-spacing:.06em;}
+nav.main{margin-left:auto;}
+nav.main ul{display:flex;gap:28px;font-size:13px;letter-spacing:.06em;}
+nav.main a{position:relative;padding-bottom:4px;}
+nav.main a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--accent);
+  transition:width .3s var(--ease);}
+nav.main a:hover::after{width:100%;}
+.hbtn{white-space:nowrap;}
+.hamb{display:none;background:none;border:0;padding:8px 0;cursor:pointer;width:34px;margin-left:auto;}
+.hamb span{display:block;height:1px;background:var(--ink);margin-left:auto;transition:.3s var(--ease);}
+.hamb span:nth-child(1){width:30px;}
+.hamb span:nth-child(2){width:22px;margin-top:7px;}
+.hamb span:nth-child(3){width:30px;margin-top:7px;}
+.hamb span:nth-child(4){width:16px;margin-top:7px;}
+
+/* =========================================================
+   FV — ナンバリング横並びカルーセル
+   ========================================================= */
+.fv{position:relative;overflow:hidden;padding:70px 0 0;}
+/* 横方向のみクリップ。下線付きキャプションが下にはみ出すため padding で逃がす */
+.fv__view{overflow:hidden;padding-bottom:96px;}
+.fv__track{display:flex;transition:transform .9s var(--ease);will-change:transform;}
+.fv__slide{flex:0 0 720px;padding:0 30px;opacity:.28;transition:opacity .9s var(--ease);}
+.fv__slide.is-on{opacity:1;}
+.fv__num{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px;}
+.fv__num b{font-family:"Work Sans",Arial,sans-serif;font-size:38px;font-weight:500;line-height:1;
+  letter-spacing:.02em;position:relative;padding:0 16px;}
+.fv__num b::before,.fv__num b::after{content:"";position:absolute;top:-4px;bottom:-4px;width:9px;
+  border:1px solid var(--ink);}
+.fv__num b::before{left:0;border-right:0;}
+.fv__num b::after{right:0;border-left:0;}
+.fv__num em{font-family:"Work Sans",Arial,sans-serif;font-style:normal;font-size:13px;
+  letter-spacing:.16em;line-height:1.5;padding-top:6px;color:var(--ink);}
+.fv__body{position:relative;}
+.fv__img{width:100%;height:330px;object-fit:cover;clip-path:var(--chamfer);}
+.fv__cap{position:absolute;left:-14px;bottom:-30px;max-width:92%;}
+.fv__cap p{background:#fff;display:table;padding:4px 14px 6px 0;font-size:24px;font-weight:500;
+  letter-spacing:.09em;line-height:1.8;border-bottom:1px solid var(--ink);margin-bottom:5px;}
+.fv__side{position:absolute;right:-26px;top:8px;height:150px;}
+.fv__tags{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap;}
+.fv__tags span{background:var(--ink);color:#fff;font-size:11px;letter-spacing:.06em;padding:4px 11px;}
+.fv__tabs{display:flex;justify-content:center;gap:30px;margin-top:-14px;flex-wrap:wrap;}
+.fv__tabs button{background:none;border:0;font-family:inherit;font-size:14px;letter-spacing:.06em;
+  color:var(--sub);cursor:pointer;padding:0 0 6px;display:inline-flex;align-items:center;gap:8px;
+  border-bottom:1px solid transparent;transition:.3s;}
+.fv__tabs button .dia{opacity:0;transition:opacity .3s;width:6px;height:6px;}
+.fv__tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink);}
+.fv__tabs button[aria-selected="true"] .dia{opacity:1;}
+
+/* --- FV下の理念ストリップ --- */
+.lead{border-top:1px solid var(--line);margin-top:70px;}
+.lead .wrap{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:end;padding-top:66px;padding-bottom:66px;}
+.lead h1{font-size:34px;font-weight:500;letter-spacing:.09em;line-height:1.8;}
+.lead h1 .line{display:block;width:fit-content;max-width:100%;position:relative;}
+.lead h1 .line::after{content:"";display:block;height:1px;background:var(--ink);margin-top:2px;}
+.lead__meta{margin-top:24px;font-size:14px;color:var(--sub);}
+.lead__tag{font-family:"Work Sans",Arial,sans-serif;font-size:12px;letter-spacing:.2em;
+  color:var(--sub);margin-bottom:20px;}
+.lead__cta{text-align:right;}
+.lead__tel{display:block;font-family:"Work Sans",Arial,sans-serif;font-size:32px;letter-spacing:.04em;
+  line-height:1.2;font-weight:500;}
+.lead__tel small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:11px;letter-spacing:.14em;
+  color:var(--sub);margin-bottom:4px;}
+.lead__cta .btn{margin-top:18px;}
+
+/* =========================================================
+   Section base
+   ========================================================= */
+section{padding:var(--pad) 0;}
+.shead{margin-bottom:66px;}
+.shead h2{font-family:"Work Sans",Arial,sans-serif;font-size:28px;font-weight:500;letter-spacing:.14em;
+  line-height:1.3;display:table;padding-bottom:10px;border-bottom:1px solid var(--ink);}
+.shead p{font-size:15px;font-weight:500;letter-spacing:.08em;margin-top:16px;}
+.shead .note{font-weight:400;color:var(--sub);font-size:14px;letter-spacing:.04em;margin-top:8px;}
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+.msg{position:relative;}
+.msg .wrap{position:relative;}
+.msg__grid{display:grid;grid-template-columns:400px 1fr;gap:0;align-items:center;}
+.msg__figure{position:relative;z-index:2;}
+.msg__figure img{width:400px;height:460px;object-fit:cover;clip-path:var(--chamfer-alt);}
+.msg__panel{background:var(--band);padding:80px 70px 80px 110px;margin-left:-60px;position:relative;}
+.msg__panel h3{font-size:26px;font-weight:500;letter-spacing:.09em;line-height:1.85;margin-bottom:8px;}
+.msg__panel h3 .line{display:block;border-bottom:1px solid var(--ink);}
+.msg__panel .en-sub{font-family:"Work Sans",Arial,sans-serif;font-size:12px;letter-spacing:.2em;
+  color:var(--sub);margin:22px 0 26px;}
+.msg__panel p{font-size:15px;line-height:2.1;margin-bottom:16px;}
+.msg__sign{margin-top:26px;font-size:14px;color:var(--sub);}
+.msg__sign b{color:var(--ink);font-weight:500;font-size:17px;letter-spacing:.1em;margin-left:8px;}
+.msg__art{margin-top:44px;}
+.msg__art svg{width:100%;max-width:520px;height:auto;}
+
+/* =========================================================
+   BUSINESS
+   ========================================================= */
+.biz{background:var(--band);}
+.biz__intro{display:grid;grid-template-columns:1fr 300px;gap:60px;align-items:end;margin-bottom:80px;}
+.biz__intro svg{width:100%;height:auto;}
+.biz__list{display:grid;grid-template-columns:repeat(2,1fr);gap:90px 70px;}
+.biz__item{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start;}
+.biz__item figure{position:relative;}
+.biz__item img{width:230px;height:270px;object-fit:cover;clip-path:var(--chamfer);
+  transition:transform 1.2s ease-out;}
+.biz__item figure{overflow:hidden;clip-path:var(--chamfer);}
+.biz__item:hover img{transform:scale(1.04);}
+.biz__num{font-family:"Work Sans",Arial,sans-serif;font-size:26px;font-weight:500;line-height:1;
+  letter-spacing:.02em;}
+.biz__en{font-family:"Work Sans",Arial,sans-serif;font-size:11px;letter-spacing:.16em;color:var(--sub);
+  margin:10px 0 14px;}
+.biz__item h3{font-size:20px;font-weight:500;letter-spacing:.08em;line-height:1.6;
+  padding-bottom:14px;border-bottom:1px solid var(--ink);margin-bottom:16px;}
+.biz__item p{font-size:14px;line-height:2;color:var(--ink);}
+.biz__item .req{font-size:13px;color:var(--sub);}
+
+/* =========================================================
+   工種一覧
+   ========================================================= */
+.spec__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 70px;border-top:1px solid var(--line);}
+.spec__grid li{display:flex;align-items:flex-start;gap:14px;padding:18px 2px;
+  border-bottom:1px solid var(--line);font-size:15px;letter-spacing:.05em;}
+.spec__grid li .dia{margin-top:11px;width:6px;height:6px;}
+.spec__grid li b{font-weight:500;}
+.spec__grid li span{display:block;font-size:13px;color:var(--sub);line-height:1.8;margin-top:2px;}
+
+/* =========================================================
+   RECRUIT
+   ========================================================= */
+.rec{position:relative;}
+.rec__top{display:grid;grid-template-columns:1fr 360px;gap:70px;align-items:end;margin-bottom:70px;}
+.badge{display:inline-flex;align-items:center;gap:12px;color:var(--accent);font-size:13px;
+  letter-spacing:.12em;font-weight:500;margin-bottom:22px;}
+.badge::before,.badge::after{content:"";width:14px;height:1px;background:var(--accent);}
+.badge::before{transform:rotate(60deg);}
+.badge::after{transform:rotate(-60deg);}
+.rec__top h2{font-size:36px;font-weight:500;letter-spacing:.09em;line-height:1.7;}
+.rec__top h2 .line{display:block;}
+.rec__top .en-sub{font-family:"Work Sans",Arial,sans-serif;font-size:12px;letter-spacing:.2em;
+  color:var(--sub);margin-top:18px;}
+.rec__top p{font-size:15px;line-height:2.1;margin-top:22px;max-width:38em;}
+.rec__photo img{width:100%;height:300px;object-fit:cover;clip-path:var(--chamfer);
+  filter:grayscale(1) contrast(1.05);}
+.rec__cap{font-size:11px;color:var(--sub);margin-top:12px;letter-spacing:.04em;}
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.job{border:1px solid var(--line);background:var(--band-2);padding:34px 28px 30px;}
+.job h3{font-size:17px;font-weight:500;letter-spacing:.07em;line-height:1.6;padding-bottom:16px;
+  border-bottom:1px solid var(--ink);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+.job dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:13.5px;line-height:1.8;}
+.job dt{color:var(--sub);white-space:nowrap;}
+.job dd{margin:0;}
+.job .pay{font-family:"Work Sans",Arial,sans-serif;font-size:15px;letter-spacing:.02em;}
+.rec__note{margin-top:34px;font-size:13px;color:var(--sub);}
+.rec__cta{margin-top:56px;border-top:1px solid var(--line);padding-top:50px;
+  display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+.rec__cta p{font-size:15px;letter-spacing:.06em;}
+.rec__cta .tel{font-family:"Work Sans",Arial,sans-serif;font-size:30px;letter-spacing:.04em;font-weight:500;
+  line-height:1.2;}
+.rec__cta .tel small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:11px;
+  letter-spacing:.14em;color:var(--sub);}
+.rec__actions{display:flex;align-items:center;gap:26px;flex-wrap:wrap;}
+
+/* =========================================================
+   COMPANY
+   ========================================================= */
+.comp{background:var(--band);}
+.comp__grid{display:grid;grid-template-columns:1fr 330px;gap:80px;align-items:start;}
+.deflist{border-top:1px solid var(--ink);}
+.deflist div{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:17px 2px;
+  border-bottom:1px solid var(--line);font-size:15px;}
+.deflist dt{color:var(--sub);font-weight:400;}
+.deflist dd{margin:0;letter-spacing:.05em;}
+.cert{background:#fff;border:1px solid var(--line);padding:34px 30px;}
+.cert .mark{width:56px;height:56px;background:var(--ink);clip-path:var(--diamond);
+  display:grid;place-items:center;margin-bottom:20px;}
+.cert .mark::after{content:"";width:16px;height:16px;background:#fff;clip-path:var(--diamond);}
+.cert h3{font-size:16px;font-weight:500;letter-spacing:.07em;line-height:1.7;margin-bottom:14px;
+  padding-bottom:14px;border-bottom:1px solid var(--ink);}
+.cert p{font-size:13px;line-height:2;color:var(--sub);}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+.faq__list{border-top:1px solid var(--ink);}
+.faq__list > li{border-bottom:1px solid var(--line);padding:30px 2px;
+  display:grid;grid-template-columns:auto 1fr;gap:6px 20px;}
+.faq__q{font-family:"Work Sans",Arial,sans-serif;font-size:15px;color:var(--accent);line-height:1.9;}
+.faq__a{font-family:"Work Sans",Arial,sans-serif;font-size:15px;color:var(--sub);line-height:2;}
+.faq__list h3{font-size:16px;font-weight:500;letter-spacing:.07em;line-height:1.9;}
+.faq__list p{font-size:15px;color:var(--ink);line-height:2;}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+.ct__grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;}
+.ct__big{font-family:"Work Sans",Arial,sans-serif;font-size:46px;letter-spacing:.03em;font-weight:500;
+  line-height:1.15;display:block;}
+.ct__big small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:12px;letter-spacing:.16em;
+  color:var(--sub);margin-bottom:8px;}
+.ct__sub{margin-top:14px;font-size:14px;color:var(--sub);}
+.ct__actions{margin-top:36px;display:flex;gap:20px;flex-wrap:wrap;}
+.ct__info{border-top:1px solid var(--ink);}
+.ct__info div{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:16px 2px;
+  border-bottom:1px solid var(--line);font-size:15px;}
+.ct__info dt{color:var(--sub);}
+.ct__info dd{margin:0;letter-spacing:.04em;}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relative;}
+.foot__grid{display:grid;grid-template-columns:1fr 1fr auto;gap:50px;align-items:start;}
+.foot__addr{font-size:13.5px;line-height:2;color:var(--sub);}
+.foot__addr b{display:block;color:var(--ink);font-weight:500;font-size:16px;letter-spacing:.08em;margin-bottom:10px;}
+.foot__addr a{color:var(--ink);}
+.foot__nav ul{display:flex;flex-wrap:wrap;gap:14px 26px;font-size:14px;}
+.foot__licence{margin-top:26px;font-size:11px;line-height:1.9;color:var(--sub);}
+.pagetop{display:flex;flex-direction:column;align-items:center;gap:12px;}
+.pagetop .arw{width:1px;height:64px;background:var(--ink);position:relative;}
+.pagetop .arw::after{content:"";position:absolute;top:0;left:-3px;width:7px;height:7px;
+  border-top:1px solid var(--ink);border-right:1px solid var(--ink);transform:rotate(-45deg);}
+.foot__bottom{margin-top:54px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-size:11px;color:var(--sub);letter-spacing:.06em;}
+.foot__bottom .en{letter-spacing:.1em;}
+.mock{border:1px solid var(--line);background:var(--band-2);padding:14px 18px;font-size:11.5px;
+  color:var(--sub);line-height:1.9;margin-top:30px;}
+
+/* =========================================================
+   Scroll reveal
+   ========================================================= */
+.js .rv{opacity:0;transform:translateY(12px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
+.js .rv.is-in{opacity:1;transform:none;}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media(max-width:1080px){
+  :root{--pad:110px;}
+  .msg__grid{grid-template-columns:320px 1fr;}
+  .msg__figure img{width:320px;height:400px;}
+  .msg__panel{padding:60px 40px 60px 80px;}
+  .biz__list{gap:70px 46px;}
+  .rec__top{grid-template-columns:1fr 280px;gap:44px;}
+  .comp__grid{grid-template-columns:1fr 280px;gap:46px;}
+  .hmeta{display:none;}
+  nav.main ul{gap:20px;font-size:12px;}
+}
+@media(max-width:900px){
+  :root{--pad:80px;}
+  header.site .wrap{height:68px;gap:16px;}
+  nav.main{position:fixed;inset:0;height:100dvh;background:#fff;transform:translateX(100%);
+    transition:transform .4s var(--ease);padding:110px 32px 40px;overflow-y:auto;margin-left:0;z-index:55;}
+  .drawer-bd{position:fixed;inset:0;background:rgba(17,17,17,.4);z-index:54;}
+  body.menu-open{overflow:hidden;}
+  nav.main.open{transform:none;}
+  nav.main ul{flex-direction:column;gap:0;font-size:20px;}
+  nav.main li{border-bottom:1px solid var(--line);}
+  nav.main a{display:block;padding:20px 0;letter-spacing:.1em;}
+  nav.main a::after{display:none;}
+  .hamb{display:block;z-index:70;}
+  .hbtn{display:none;}
+  .fv{padding-top:36px;}
+  .fv__view{padding-bottom:74px;}
+  .fv__slide{flex:0 0 100%;padding:0 24px;opacity:1;}
+  .fv__img{height:230px;}
+  .fv__cap{left:0;bottom:-24px;max-width:100%;}
+  .fv__cap p{font-size:18px;}
+  .fv__side{display:none;}
+  .fv__num b{font-size:30px;}
+  .fv__tabs{margin-top:-18px;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;
+    gap:24px;padding:0 24px 4px;-ms-overflow-style:none;scrollbar-width:none;}
+  .fv__tabs::-webkit-scrollbar{display:none;}
+  .fv__tabs button{white-space:nowrap;font-size:13px;}
+  .lead{margin-top:48px;}
+  .lead .wrap{grid-template-columns:1fr;gap:34px;padding-top:44px;padding-bottom:44px;}
+  .lead h1{font-size:21px;letter-spacing:.07em;}
+  .lead__cta{text-align:left;}
+  .shead{margin-bottom:44px;}
+  .shead h2{font-size:20px;}
+  .msg__grid{grid-template-columns:1fr;}
+  .msg__figure img{width:100%;height:280px;clip-path:var(--chamfer);}
+  .msg__panel{margin-left:0;margin-top:-30px;padding:56px 24px 44px;}
+  .msg__panel h3{font-size:19px;}
+  .biz__intro{grid-template-columns:1fr;gap:30px;margin-bottom:50px;}
+  .biz__intro svg{max-width:260px;}
+  .biz__list{grid-template-columns:1fr;gap:48px;}
+  .biz__item{grid-template-columns:120px 1fr;gap:20px;}
+  .biz__item img{width:120px;height:150px;}
+  .biz__item h3{font-size:17px;}
+  .spec__grid{grid-template-columns:1fr;gap:0;}
+  .rec__top{grid-template-columns:1fr;gap:34px;}
+  .rec__top h2{font-size:24px;}
+  .jobs{grid-template-columns:1fr;gap:18px;}
+  .comp__grid{grid-template-columns:1fr;gap:40px;}
+  .deflist div{grid-template-columns:110px 1fr;gap:14px;font-size:14px;}
+  .faq__list > li{grid-template-columns:auto 1fr;gap:4px 14px;padding:24px 2px;}
+  .ct__grid{grid-template-columns:1fr;gap:44px;}
+  .ct__big{font-size:34px;}
+  .ct__info div{grid-template-columns:88px 1fr;gap:14px;font-size:14px;}
+  .foot__grid{grid-template-columns:1fr;gap:34px;}
+  .pagetop{flex-direction:row;align-self:flex-end;}
+  .pagetop .arw{height:1px;width:54px;}
+  .pagetop .arw::after{top:-3px;left:0;transform:rotate(-135deg);}
+  .pagetop .vtxt{writing-mode:horizontal-tb;}
+  .rec__cta{padding-top:36px;margin-top:40px;}
+}
+@media(max-width:430px){
+  .lead h1{font-size:19px;}
+  .lead__tel{font-size:26px;}
+  .ct__big{font-size:28px;}
+  .biz__item{grid-template-columns:1fr;}
+  .biz__item img{width:100%;height:200px;}
+  .btn{padding:16px 28px;font-size:13px;}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation:none!important;transition:none!important;}
+  .rv{opacity:1;transform:none;}
+  .fv__slide{opacity:1;}
+}
+</style>
+<!-- 構造化データ。noindex なので検索には出ないが、qa_check が必須としているので置く。
+     値は全てプレースホルダにしてある（種の会社の情報が残らないように） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "株式会社戸室組",
+  "url": "https://shogohukunaga.github.io/tomuro/",
+  "telephone": "+81283620223",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "JP",
+    "addressRegion": "栃木県",
+    "addressLocality": "佐野市",
+    "streetAddress": "栃木県佐野市戸奈良町1265"
+  },
+  "description": "栃木県佐野市の総合建設業。治山・林道工事・道路工事・河川・砂防工事。"
+}
+</script>
+<!-- 配色の上書き。値が無ければブロックごと落ちてベースの既定色が残る -->
+<!--BLOCK:色_主--><style>:root{--accent:#1D4B87;}</style><!--/BLOCK:色_主-->
+<!--BLOCK:色_地--><style>:root{--band:#F0F3F8;}</style><!--/BLOCK:色_地-->
+
+</head>
+<body>
+
+<!-- ===================== Header ===================== -->
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="株式会社戸室組 トップへ">
+      <span class="brand__mark" aria-hidden="true"><span></span><span></span></span>
+      <span class="brand__name">株式会社戸室組<small>TOMURO GUMI</small></span>
+    </a>
+    <p class="hmeta">栃木県佐野市戸奈良町1265<br><b>T. 0283-62-0223</b></p>
+    <div class="drawer-bd" data-drawer-backdrop hidden></div>
+    <nav class="main" id="nav" data-drawer aria-hidden="true">
+      <ul>
+        <li><a href="#message">理念</a></li>
+        <li><a href="#business">事業領域</a></li>
+        <li><a href="#slope">治山・林道工事</a></li>
+        <li><a href="#recruit">採用情報</a></li>
+        <li><a href="#company">会社概要</a></li>
+        <li><a href="#faq">よくあるご質問</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <a class="btn hbtn" href="#contact">お問い合わせ</a>
+    <button class="hamb" id="hamb" type="button" data-drawer-toggle aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== FV ===================== -->
+<section class="fv grid-bg" aria-label="事業領域">
+  <div class="fv__view">
+    <div class="fv__track" id="fvTrack">
+
+      <article class="fv__slide" data-i="0">
+        <div class="fv__num"><b>01</b><em>EROSION</em></div>
+        <div class="fv__tags"><span>#治山・林道</span><span>#河川・砂防</span><span>#法面</span></div>
+        <div class="fv__body">
+          <img class="fv__img" src="image/work-slope.jpg" alt="金網で保護された法面と、その下を通る道路" width="1800" height="1200" loading="eager" decoding="async">
+          <div class="fv__cap">
+            <p>山肌の崩れを、止める。</p>
+            <p>治山・林道工事。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="fv__slide" data-i="1">
+        <div class="fv__num"><b>02</b><em>ROAD</em></div>
+        <div class="fv__tags"><span>#治山・林道</span><span>#河川・砂防</span><span>#法面</span></div>
+        <div class="fv__body">
+          <img class="fv__img" src="image/work-civil.jpg" alt="造成地で砕石をならす油圧ショベルを真上から見たところ" width="1800" height="1800" loading="lazy" decoding="async">
+          <div class="fv__cap">
+            <p>道を、広げる。</p>
+            <p>道路工事。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="fv__slide" data-i="2">
+        <div class="fv__num"><b>03</b><em>RIVER</em></div>
+        <div class="fv__tags"><span>#治山・林道</span><span>#河川・砂防</span><span>#法面</span></div>
+        <div class="fv__body">
+          <img class="fv__img" src="image/work-tunnel.jpg" alt="照明の連なるトンネルの内部" width="1800" height="1234" loading="lazy" decoding="async">
+          <div class="fv__cap">
+            <p>水害から、地域を守る。</p>
+            <p>河川・砂防工事。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="fv__slide" data-i="3">
+        <div class="fv__num"><b>04</b><em>SLOPE</em></div>
+        <div class="fv__tags"><span>#治山・林道</span><span>#河川・砂防</span><span>#法面</span></div>
+        <div class="fv__body">
+          <img class="fv__img" src="image/work-bridge.jpg" alt="河川に架かる橋梁" width="1800" height="1200" loading="lazy" decoding="async">
+          <div class="fv__cap">
+            <p>斜面を、押さえる。</p>
+            <p>法面工事。</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="fv__tabs" role="tablist" id="fvTabs">
+    <button type="button" role="tab" aria-selected="true"  data-i="0"><span class="dia dia--accent"></span>治山・林道工事</button>
+    <button type="button" role="tab" aria-selected="false" data-i="1"><span class="dia dia--accent"></span>道路工事</button>
+    <button type="button" role="tab" aria-selected="false" data-i="2"><span class="dia dia--accent"></span>河川・砂防工事</button>
+    <button type="button" role="tab" aria-selected="false" data-i="3"><span class="dia dia--accent"></span>法面工事</button>
+  </div>
+
+  <div class="lead">
+    <div class="wrap">
+      <div>
+        <p class="lead__tag en">ONE HUNDRED YEARS IN SANO</p>
+        <h1>
+          <span class="line">ひとすじに100年、</span>
+          <span class="line">次の100年へ。</span>
+        </h1>
+        <p class="lead__meta">株式会社戸室組は、栃木県佐野市の総合建設業です。<br>
+          株式会社戸室組は、大正8年（1919）の創業以来、平成31年4月に創業100年となりました。建設業の役割は、人々の社会生活を足元から支える土台を造り、災害から人々を守る堰を造ることです。これからも時代に順応しながら、地域の発展のために多くの皆様方に支えていただけるような会社を目指して参ります。</p>
+      </div>
+      <div class="lead__cta">
+        <a class="lead__tel en" href="tel:0283620223"><small>お問い合わせ・ご相談</small>0283-62-0223</a>
+        <a class="btn" href="#recruit">採用情報を見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MESSAGE ===================== -->
+<section class="msg" id="message">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>MESSAGE</h2>
+      <p>代表あいさつ・企業理念</p>
+    </div>
+    <div class="msg__grid">
+      <figure class="msg__figure rv">
+        <img src="image/region.jpg" alt="緑に覆われた山並みと、その麓に広がる田畑と集落" width="1800" height="2694" loading="lazy" decoding="async">
+      </figure>
+      <div class="msg__panel rv">
+        <h3>
+          <span class="line">MAKING WHAT STAYS ON THE MAP</span>
+          <span class="line">地図に残るものづくり。</span>
+        </h3>
+        <p class="en-sub">A MESSAGE FROM THE PRESIDENT</p>
+        <p>弊社は、大正8年（1919）の創業以来、平成31年4月に創業100年となりました。初代が砂利採取業を起業し、田沼町戸奈良地内および栃本地内において河川砂利を採取、軌道により田沼駅に集積後、東武鉄道と連携し押上駅まで貨車輸送を行い、関東大震災後の東京復興のための資材供給が始まりです。</p>
+        <p>インフラの耐用年数は一般的に50年と言われていますが、私が20代に手掛けた山腹工（山肌崩壊土砂の流出防止施設）は約50年を経過した今でも効果を発揮しており、この場に立つと自身の原点を思い出し、胸が熱くなります。携わった仕事の成果が目に見える形で長く残り続けることも、建設業の大きな魅力となっています。</p>
+        <p>弊社では長く勤めている人達がたくさんいます。チームワークが工事の進捗や労働災害防止に直結するだけに、職場の環境づくりには特に力を入れています。未経験からのスタートであっても、それぞれに得意分野を見つけ数多くの資格を取得しながら仕事を覚え、最大限に力を発揮できる術を身につけて頂きたいと思います。</p>
+        <!--BLOCK:代表者名--><p class="msg__sign">代表取締役<b>戸室 克美</b></p><!--/BLOCK:代表者名-->
+      </div>
+    </div>
+
+    <div class="msg__art rv" aria-hidden="true">
+      <!-- 稜線とラティスの線画 -->
+      <svg viewBox="0 0 520 150" fill="none" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 138 L96 44 L150 92 L206 34 L268 104 L318 68 L372 118 L438 74 L516 138"/>
+        <path d="M206 34 L232 60 M206 34 L188 58"/>
+        <path d="M268 104 L516 138" stroke-dasharray="5 6"/>
+        <g opacity=".85">
+          <path d="M330 128 L360 100 M352 132 L382 104 M374 136 L404 108 M396 140 L426 112"/>
+          <path d="M336 104 L366 132 M358 100 L388 128 M380 100 L410 128 M402 104 L432 132"/>
+          <path d="M322 132 L440 132"/>
+        </g>
+        <path d="M60 138 L60 120 L76 120 L76 138" />
+        <path d="M60 120 L68 112 L76 120"/>
+        <circle cx="452" cy="30" r="11"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BUSINESS ===================== -->
+<section class="biz" id="business">
+  <div class="wrap">
+    <div class="biz__intro">
+      <div class="shead rv" style="margin-bottom:0">
+        <h2>BUSINESS</h2>
+        <p>事業領域</p>
+        <p class="note">国土交通省関東地方整備局、栃木県県土整備部・環境森林部、佐野市から発注を受けています。治山・林道工事と河川・砂防工事を最も得意とし、所長表彰・知事表彰を繰り返しいただいてきました。ISO9001・ISO14001 を取得しています。</p>
+      </div>
+      <div class="rv" aria-hidden="true">
+        <!-- トンネル断面（アーチ＋支保工）の線画 -->
+        <svg viewBox="0 0 300 170" fill="none" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 154 C18 66 78 16 150 16 C222 16 282 66 282 154"/>
+          <path d="M40 154 C40 80 88 38 150 38 C212 38 260 80 260 154"/>
+          <path d="M62 154 C62 94 98 60 150 60 C202 60 238 94 238 154"/>
+          <path d="M6 154 L294 154"/>
+          <path d="M150 16 L150 38 M96 26 L106 46 M204 26 L194 46 M56 60 L72 76 M244 60 L228 76 M30 108 L48 114 M270 108 L252 114"/>
+          <path d="M118 154 L118 126 L182 126 L182 154" stroke-dasharray="4 5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="biz__list">
+      <article class="biz__item rv">
+        <figure><img src="image/work-slope.jpg" alt="金網で保護された法面と、その下を通る道路" width="1800" height="1200" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="biz__num">01</p>
+          <p class="biz__en">EROSION</p>
+          <h3>治山・林道工事</h3>
+          <p>治山施設は、森林を健全な状態で維持することを目的として造られており、山腹崩壊土砂の流下を防止するための谷止工および流路工、土留工などが主な工事となっています。林道は、森林資源の有効利用や山間地域活性化等のための重要な施設です。長年の施工実績とノウハウを有しており、最も得意とする工事です。</p>
+        </div>
+      </article>
+
+      <article class="biz__item rv">
+        <figure><img src="image/work-civil.jpg" alt="重機が稼働する造成・土工事の現場を上空から見たようす" width="1800" height="1800" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="biz__num">02</p>
+          <p class="biz__en">ROAD</p>
+          <h3>道路工事</h3>
+          <p class="req">バイパスなど新たに道路を造る新設工事、拡幅や歩道を設置するなどの改良工事、橋梁の耐震化や舗装修繕など既設施設の長寿命化を図るための維持・修繕工事を手がけています。国道50号上り6車線化工事では平成22年度の局長表彰を、一般県道佐野太田線の道路整備工事では平成20年度の知事表彰をいただきました。</p>
+        </div>
+      </article>
+
+      <article class="biz__item rv">
+        <figure><img src="image/work-tunnel.jpg" alt="トンネル坑内での工事のようす。換気管の下を工事車両が進む" width="1800" height="1234" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="biz__num">03</p>
+          <p class="biz__en">RIVER</p>
+          <h3>河川・砂防工事</h3>
+          <p class="req">国が管理する渡良瀬川、県が管理する秋山川・旗川・彦間川などで、長年にわたり築堤工事や護岸工事などの治水工事を行ってきました。上流域では砂防ダムや流路工の工事も手がけています。秋山川護岸工事、鬼怒川右岸坪井築堤工事、河道掘削工事などで所長表彰をいただきました。</p>
+        </div>
+      </article>
+
+      <article class="biz__item rv">
+        <figure><img src="image/work-bridge.jpg" alt="河川に架かるコンクリート橋の橋脚と桁の下面" width="1800" height="1200" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="biz__num">04</p>
+          <p class="biz__en">SLOPE</p>
+          <h3>法面工事</h3>
+          <p class="req">道路築造時の切土部や盛土部の法面安定度強化、雨水による浸食を防止するための法面保護工や落石防止工が主な工事です。近年多発している急傾斜地等における土砂災害を防止するため、多様な工法により施工しています。国の国土強靱化施策により当該工種の発注が増加しており、更なる施工ノウハウの蓄積を目指しています。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!--BLOCK:工種-->
+<!-- 得意分野の工種を並べるセクション。内容.tsv の 工種_見出し が空なら丸ごと消える -->
+<section class="spec" id="slope">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>ICT</h2>
+      <p>ICT活用工事への取り組み</p>
+      <p class="note">国土交通省が推進するICT活用工事は、建設現場における生産性向上のため、測量、設計施工計画、施工、検査までの工程にICTを活用していく工事です。これまで培ったノウハウを活かしながら新たなICT施工のノウハウを蓄積しています。</p>
+    </div>
+    <ul class="spec__grid rv">
+      <li><span class="dia"></span><div><b>3次元起工測量と3次元測量設計データ作成</b></div></li>
+      <li><span class="dia"></span><div><b>ICT建機による施工</b></div></li>
+      <li><span class="dia"></span><div><b>3次元出来形管理・3次元データでの納品</b></div></li>
+      <li><span class="dia"></span><div><b>令和2年度 秋山川護岸工事 所長表彰</b></div></li>
+      <li><span class="dia"></span><div><b>平成22年度 国道50号上り6車線化工事 局長表彰</b></div></li>
+      <li><span class="dia"></span><div><b>平成24年度 林道開設工事 作原沢入線 知事表彰</b></div></li>
+    </ul>
+  </div>
+</section>
+<!--/BLOCK:工種-->
+
+<!-- ===================== RECRUIT ===================== -->
+<section class="rec" id="recruit">
+  <div class="wrap">
+    <div class="rec__top">
+      <div class="rv">
+        <p class="badge">募集中</p>
+        <h2>
+          <span class="line">地元で、</span>
+          <span class="line">長く働く。</span>
+        </h2>
+        <p class="en-sub">RECRUIT</p>
+        <p><span class="line">土木施工管理・現場作業員を募集しています。</span><span class="line">勤務地は栃木県佐野市。</span><span class="line">「入社して良かった」と思ってもらえる会社づくりに取り組んでいます。未経験からのスタートであっても、数多くの資格を取得しながら仕事を覚えていただけます。やりがいと誇りをもって仕事に取り組む人を応援します。</span></p>
+      </div>
+      <div class="rec__photo rv">
+        <img src="image/recruit.jpg" alt="ヘルメットと安全ベストを着用して現場に立つ作業員の後ろ姿" width="1800" height="2700" loading="lazy" decoding="async">
+        <p class="rec__cap">※ 写真はイメージです</p>
+      </div>
+    </div>
+
+    <div class="rec__cta rv">
+      <p>まずはお電話ください。<br>ご不明な点だけのお問い合わせでも構いません。</p>
+      <div class="rec__actions">
+        <a class="tel en" href="tel:0283620223"><small>採用に関するお問い合わせ</small>0283-62-0223</a>
+        <!--BLOCK:メール--><a class="btn" href="mailto:tomuro@zd.wakwak.com?subject=%E6%8E%A1%E7%94%A8%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%81%AE%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B">メールで問い合わせる</a><!--/BLOCK:メール-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMPANY ===================== -->
+<section class="comp" id="company">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>COMPANY</h2>
+      <p>会社概要</p>
+    </div>
+    <div class="comp__grid">
+      <dl class="deflist rv">
+        <div><dt>社名</dt><dd>株式会社戸室組</dd></div>
+        <div><dt>所在地</dt><dd>栃木県佐野市戸奈良町1265</dd></div>
+        <div><dt>代表取締役</dt><dd>戸室 克美</dd></div>
+        <div><dt>設立</dt><dd>創業以来、平成31年</dd></div>
+        <!--BLOCK:資本金--><div><dt>資本金</dt><dd>3,800万円</dd></div><!--/BLOCK:資本金-->
+        <!--BLOCK:従業員数--><div><dt>従業員</dt><dd>30名</dd></div><!--/BLOCK:従業員数-->
+        <div><dt>事業種目</dt><dd>建設業（治山・林道工事／道路工事／河川・砂防工事）</dd></div>
+        <div><dt>電話</dt><dd>TEL 0283-62-0223</dd></div>
+        <!--BLOCK:メール--><div><dt>メール</dt><dd><a class="tlink" href="mailto:tomuro@zd.wakwak.com">tomuro@zd.wakwak.com</a></dd></div><!--/BLOCK:メール-->
+      </dl>
+      <!--BLOCK:認定-->
+      <div class="cert rv">
+        <span class="mark" aria-hidden="true"></span>
+        <h3>認証・行動計画</h3>
+        <p>ISO9001・ISO14001 を取得しています。女性活躍推進法および次世代育成対策推進法に基づく一般事業主行動計画を策定し、採用した労働者に占める女性労働者の割合を20%以上にする目標のもと、女性のインターンシップ受け入れを推進しています。</p>
+      </div>
+      <!--/BLOCK:認定-->
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>FAQ</h2>
+      <p>よくあるご質問</p>
+    </div>
+    <ul class="faq__list rv">
+      <li>
+        <span class="faq__q" aria-hidden="true">Q.</span>
+        <h3>株式会社戸室組はどこにありますか？</h3>
+        <span class="faq__a" aria-hidden="true">A.</span>
+        <p>栃木県佐野市戸奈良町1265にあります。</p>
+      </li>
+      <!--BLOCK:FAQ1_回答-->
+      <li>
+        <span class="faq__q" aria-hidden="true">Q.</span>
+        <h3>どのような工事が得意ですか？</h3>
+        <span class="faq__a" aria-hidden="true">A.</span>
+        <p>治山・林道工事と河川・砂防工事です。いずれも長年の施工実績とノウハウを有しており、所長表彰・知事表彰を繰り返しいただいてきました。</p>
+      </li>
+      <!--/BLOCK:FAQ1_回答-->
+      <!--BLOCK:FAQ2_回答-->
+      <li>
+        <span class="faq__q" aria-hidden="true">Q.</span>
+        <h3>主な発注者はどこですか？</h3>
+        <span class="faq__a" aria-hidden="true">A.</span>
+        <p>国土交通省関東地方整備局、栃木県県土整備部・環境森林部、佐野市です。栃木県内のほか、茨城県・群馬県でも施工しています。</p>
+      </li>
+      <!--/BLOCK:FAQ2_回答-->
+      <!--BLOCK:FAQ3_回答-->
+      <li>
+        <span class="faq__q" aria-hidden="true">Q.</span>
+        <h3>ICT施工には対応していますか？</h3>
+        <span class="faq__a" aria-hidden="true">A.</span>
+        <p>3次元起工測量による設計データ作成、ICT建機による施工、3次元出来形管理、3次元データでの納品まで、ICT活用工事の実績を重ねています。</p>
+      </li>
+      <!--/BLOCK:FAQ3_回答-->
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="ct" id="contact">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>CONTACT</h2>
+      <p>お問い合わせ</p>
+    </div>
+    <div class="ct__grid">
+      <div class="rv">
+        <a class="ct__big" href="tel:0283620223"><small>お電話でのお問い合わせ</small>0283-62-0223</a>
+        <p class="ct__sub">工事のご相談も、採用へのご応募も、こちらの番号で承ります。</p>
+        <div class="ct__actions">
+          <!--BLOCK:メール--><a class="btn" href="mailto:tomuro@zd.wakwak.com">メールで問い合わせる</a><!--/BLOCK:メール-->
+          <a class="btn btn--ghost" href="#recruit">採用情報を見る</a>
+        </div>
+      </div>
+      <dl class="ct__info rv">
+        <div><dt>本社</dt><dd>栃木県佐野市戸奈良町1265</dd></div>
+        <div><dt>TEL</dt><dd>0283-62-0223</dd></div>
+        <!--BLOCK:FAX--><div><dt>FAX</dt><dd>0283-62-7066</dd></div><!--/BLOCK:FAX-->
+        <!--BLOCK:メール--><div><dt>MAIL</dt><dd><a class="tlink" href="mailto:tomuro@zd.wakwak.com">tomuro@zd.wakwak.com</a></dd></div><!--/BLOCK:メール-->
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== Footer ===================== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__addr">
+        <b>株式会社戸室組</b>
+        栃木県佐野市戸奈良町1265<br>
+        <a class="tlink" href="tel:0283620223">T. 0283-62-0223</a>　F. 0283-62-7066<br>
+        <!--BLOCK:メール--><a class="tlink" href="mailto:tomuro@zd.wakwak.com">tomuro@zd.wakwak.com</a><!--/BLOCK:メール-->
+        <p class="foot__licence">建設業許可番号　特定建設業 栃木県知事許可 第1618号<br>創業以来、平成31年</p>
+      </div>
+      <nav class="foot__nav" aria-label="フッターナビゲーション">
+        <ul>
+          <li><a class="tlink" href="#message">理念</a></li>
+          <li><a class="tlink" href="#business">事業領域</a></li>
+          <li><a class="tlink" href="#slope">治山・林道工事</a></li>
+          <li><a class="tlink" href="#recruit">採用情報</a></li>
+          <li><a class="tlink" href="#company">会社概要</a></li>
+          <li><a class="tlink" href="#faq">よくあるご質問</a></li>
+          <li><a class="tlink" href="#contact">お問い合わせ</a></li>
+        </ul>
+        <p class="mock">本ページはリニューアル提案用のデザインモックアップです。掲載写真はすべてイメージ（フリー素材）であり、実際のお写真に差し替わります。</p>
+      </nav>
+      <a class="pagetop" href="#top" aria-label="ページ上部へ戻る">
+        <span class="arw" aria-hidden="true"></span>
+        <span class="vtxt">Pagetop</span>
+      </a>
+    </div>
+    <div class="foot__bottom">
+      <span class="en">Copyright(C), TOMURO GUMI ALL rights reserved</span>
+      <span>ONE HUNDRED YEARS IN SANO</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- ハンバーガー ---------- */
+  var hamb = document.querySelector("[data-drawer-toggle]"),
+      nav  = document.querySelector("[data-drawer]"),
+      bd   = document.querySelector("[data-drawer-backdrop]");
+  function setNav(open){
+    nav.classList.toggle("open", open);
+    nav.setAttribute("aria-hidden", open ? "false" : "true");
+    hamb.setAttribute("aria-expanded", open ? "true" : "false");
+    bd.hidden = !open;
+    document.body.classList.toggle("menu-open", open);
+  }
+  function closeNav(){ setNav(false); }
+  hamb.addEventListener("click", function(){ setNav(!nav.classList.contains("open")); });
+  bd.addEventListener("click", closeNav);
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeNav(); });
+  nav.addEventListener("click", function(e){ if(e.target.tagName === "A") closeNav(); });
+  // 画面幅が戻ったらドロワー状態を必ず解除する（PCで body が固定されたままになる）
+  window.addEventListener("resize", function(){
+    if(window.innerWidth > 900 && nav.classList.contains("open")) closeNav();
+  });
+
+  /* ---------- FVカルーセル ---------- */
+  var track = document.getElementById("fvTrack"),
+      tabs  = document.getElementById("fvTabs"),
+      slides = Array.prototype.slice.call(track.children),
+      btns   = Array.prototype.slice.call(tabs.querySelectorAll("button")),
+      cur = 0, timer = null;
+
+  function layout(){
+    var vw = track.parentNode.clientWidth,
+        sw = slides[0].offsetWidth,
+        x  = vw / 2 - (cur * sw + sw / 2);
+    if (window.innerWidth <= 900) x = -cur * sw;
+    track.style.transform = "translateX(" + x + "px)";
+    slides.forEach(function(s, i){ s.classList.toggle("is-on", i === cur); });
+    btns.forEach(function(b, i){ b.setAttribute("aria-selected", i === cur ? "true" : "false"); });
+  }
+  function go(i){ cur = (i + slides.length) % slides.length; layout(); }
+  function start(){ if(reduce) return; stop(); timer = setInterval(function(){ go(cur + 1); }, 6000); }
+  function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+
+  btns.forEach(function(b){
+    b.addEventListener("click", function(){ go(parseInt(b.getAttribute("data-i"), 10)); start(); });
+  });
+  window.addEventListener("resize", layout);
+  layout();
+  start();
+
+  /* ---------- スクロールリビール ---------- */
+  var rv = Array.prototype.slice.call(document.querySelectorAll(".rv"));
+  function revealAll(){ rv.forEach(function(el){ el.classList.add("is-in"); }); }
+  if (reduce || !("IntersectionObserver" in window)) {
+    revealAll();
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var el = en.target;
+        var sibs = Array.prototype.slice.call(el.parentNode.children).filter(function(n){
+          return n.classList && n.classList.contains("rv");
+        });
+        el.style.transitionDelay = (Math.min(sibs.indexOf(el), 5) * 80) + "ms";
+        el.classList.add("is-in");
+        io.unobserve(el);
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+    rv.forEach(function(el){ io.observe(el); });
+    /* 失敗時の保険: 監視が一度も発火しなければ全部出す（提案先で真っ白にしない） */
+    setTimeout(function(){ if(!document.querySelector(".rv.is-in")) revealAll(); }, 2500);
+    window.addEventListener("load", function(){
+      setTimeout(function(){ if(!document.querySelector(".rv.is-in")) revealAll(); }, 1200);
+    });
+  }
+})();
+</script>
+</body>
+</html>
